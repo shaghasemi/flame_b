@@ -1,0 +1,71 @@
+import 'package:flame/components.dart';
+import 'package:flame/game.dart';
+import 'package:flutter/material.dart';
+import 'package:flame_texturepacker/flame_texturepacker.dart';
+
+void main() {
+  runApp(
+    GameWidget(
+      game: MySpriteTutorial(),
+    ),
+  );
+}
+
+class MySpriteTutorial extends FlameGame {
+  late SpriteAnimationComponent robotRunning;
+  late SpriteAnimationComponent robotJumping;
+  late SpriteAnimationComponent girlWalking;
+
+  @override
+  Future<void>? onLoad() async {
+    super.onLoad();
+    final spriteSheetRun = await fromJSONAtlas(
+      'robot_run.png',
+      'robot_run.json',
+    );
+    final spriteSheetJump = await fromJSONAtlas(
+      'robot_jump.png',
+      'robot_jump.json',
+    );
+    final spriteSheetWalk = await fromJSONAtlas(
+      'girl_walk.png',
+      'girl_walk.json',
+    );
+    SpriteAnimation run = SpriteAnimation.spriteList(
+      spriteSheetRun,
+      stepTime: 0.2,
+    );
+    SpriteAnimation jump = SpriteAnimation.spriteList(
+      spriteSheetJump,
+      stepTime: 0.25,
+    );
+    SpriteAnimation walk = SpriteAnimation.spriteList(
+      spriteSheetWalk,
+      stepTime: 0.05,
+    );
+    robotRunning = SpriteAnimationComponent()
+      ..animation = walk
+      ..position = Vector2(100, 100)
+      ..size = Vector2(200, 200);
+    // add(robotRunning);
+
+    robotJumping = SpriteAnimationComponent()
+      ..animation = jump
+      ..position = Vector2(200, 200)
+      ..size = Vector2(150, 150);
+    // add(robotJumping);
+
+    girlWalking = SpriteAnimationComponent()
+      ..animation = walk
+      ..position = Vector2(40, 30)
+      ..size = Vector2(150, 150);
+    add(girlWalking);
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
+    girlWalking.y += dt * 10;
+    girlWalking.x += dt * 20;
+  }
+}

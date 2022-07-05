@@ -1,0 +1,92 @@
+{"frames": {
+
+"Jump (1).png":
+{
+	"frame": {"x":1,"y":1,"w":287,"h":464},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":65,"w":287,"h":464},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (2).png":
+{
+	"frame": {"x":467,"y":1,"w":327,"h":483},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":130,"y":58,"w":327,"h":483},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (3).png":
+{
+	"frame": {"x":1,"y":290,"w":342,"h":451},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":95,"y":56,"w":342,"h":451},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (4).png":
+{
+	"frame": {"x":1,"y":634,"w":343,"h":446},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":56,"w":343,"h":446},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (5).png":
+{
+	"frame": {"x":449,"y":661,"w":353,"h":430},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":57,"w":353,"h":430},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (6).png":
+{
+	"frame": {"x":1,"y":979,"w":381,"h":413},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":57,"w":381,"h":413},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (7).png":
+{
+	"frame": {"x":476,"y":1373,"w":386,"h":476},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":69,"y":57,"w":386,"h":476},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (8).png":
+{
+	"frame": {"x":1,"y":1373,"w":385,"h":473},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":57,"w":385,"h":473},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (9).png":
+{
+	"frame": {"x":416,"y":1016,"w":355,"h":499},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":57,"w":355,"h":499},
+	"sourceSize": {"w":567,"h":556}
+},
+"Jump (10).png":
+{
+	"frame": {"x":454,"y":330,"w":329,"h":496},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":135,"y":59,"w":329,"h":496},
+	"sourceSize": {"w":567,"h":556}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "robot_jump.png",
+	"format": "RGBA8888",
+	"size": {"w":953,"h":1760},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e56f873675405a2fbfa9f8fdaa3b094c:1d2091e04985f3385d45bdcaa4fa6a02:b92b37b0f9c1d6608328eb9335504255$"
+}
+}
