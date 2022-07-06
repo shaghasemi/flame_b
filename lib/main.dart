@@ -1,14 +1,15 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:flame/flame.dart';
+import 'tile.turtorial.dart';
 import 'walk.tutorial.dart';
 
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized();
 
-  Flame.device.fullScreen();
-  Flame.device.setLandscape();
+  // Flame.device.fullScreen();
+  // Flame.device.setLandscape();
 
   runApp(
     GameWidget(
@@ -20,7 +21,8 @@ void main() async {
         ),
       ),
 
-      game: MySpriteTutorial(),
+      // game: MySpriteTutorial(),
+      game: TileTutorialGame(),
 
     ),
   );
